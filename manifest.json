@@ -1,0 +1,11 @@
+{ "name": "BannerAdder",
+  "version": "0.0.1",
+  "permissions": [ "activeTab" ],
+  "content_scripts":
+    [ { "matches": ["http://*/*", "https://*/*"],
+        "js": ["bannerscript.js"]
+      }
+    ],
+  "background": { "scripts": ["background.js"] },
+  "manifest_version": 2
+}
